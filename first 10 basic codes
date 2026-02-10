@@ -1,0 +1,101 @@
+# print heklo world
+#print("Hello, World!")
+# print your resume details
+print("Name: Mehak Chib")
+print("Email: mehakchib224@gmail.com")
+print("Phone: +91-9876543210")
+print("Education: B.Tech in Computer Science")
+print("Skills: Python, Java, C++")
+print("university: iilm University")
+#CREATE A CIRCUMFERENCE and area OF CIRCLE PROGRAM
+radius =float(input("Enter the radius of the circle: "))
+circumference = 2 * 3.14 * radius
+print("The circumference of the circle is:", circumference)
+area = 3.14 * radius * radius
+print("The area of the circle is:", area)
+#CREATE AREA OF TRIANGE PROGRAM
+base = float(input("enter the base of the triangle: "))
+height = float(input("enter the height of the triangle: "))
+area = 0.5*base*height #same name area variable used in circle area it update the values dynamically
+print("the area of triangle is:", area)
+#SWAP TWO NUMBERS PROGRAM
+a = int(input("enter the value of a: "))
+b= int(input("enter the value of b: "))
+print("before swapping a =", a)
+print("before swapping b =", b)
+#swapping
+val = a
+a = b
+b = val
+print("after swapping a =", a, "after swapping b =", b)
+#CALCULATE SIMPLE INTEREST PROGRAM
+p= float(input("enter the principal amount: "))
+r= float(input("enter the rate of interest: "))
+t= float(input("enter the time period: "))
+simple_interest = (p*r*t)/100
+print("the simple interest is:", simple_interest)
+#celsious to fahrenheit
+c = float(input("enter temperature in celsious: "))
+f = (c * 9/5) + 32
+print("the temperature in fahrenheit is:", f)
+#AVERAGE OF N NUMBERS PROGRAM
+n = int(input("enter how many numbers you want to calculate average for: "))
+sum = 0
+for i in range(n):
+    num= int(input("enter number:"))
+    sum =+ num
+average = sum/n
+print("the average of the numbers is:", average)
+#FACTORIAL OF A NUMBER PROGRAM
+num = int(input("enter a number to calculate its factorial: "))
+factorial = 1
+for i in range(1, num + 1):
+    factorial = factorial * i
+print("the factorial of", num, "is:", factorial)
+#calculate area of a rectangle 
+length = float(input("enter the length of the rectangle: "))
+width = float(input("enter the width of the rectangle: "))  
+area = length * width
+print("the area of the rectangle is:", area)
+#calculate your age in days
+age = int(input("enter your age in years: "))
+age_in_days = age * 365
+print("your age in days is:", age_in_days)
+#find the largest of three numbers
+num1 = float(input("enter first number: ")) 
+num2 = float(input("enter second number: "))
+num3 = float(input("enter third number: "))
+if (num1 >= num2) and (num1 >= num3):
+    largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+    largest = num2
+else:
+    largest = num3
+print("the largest number is:", largest)
+#prime number check
+num = int(input("enter a number to check if it is prime: "))
+if num > 1:
+    for i in range(2, int(num/2) + 1): #start from 2  1 is not prime and till num/2 becoz any num greater than num/2 cannot divide num
+        if (num % i) == 0: #its completely divide and answer is 0its not prime
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number") 
+#fibonacci series
+n = int(input("enter the number of terms in fibonacci series: "))   
+a, b = 0, 1
+i = 0 #loop counter
+while i < n:#loop runs till i is less than n
+    print(a, end=' ') #print current value of a end=' ' is used to print in same line with space
+    c = a + b #next term is sum of previous two terms
+    a = b #update a to b
+    b = c #update b to c
+    i += 1
+#check leap year or not
+year= int(input("enter the year"))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a leap year")
+else:
+    print(year, "is not a leap year")
+
+ 
